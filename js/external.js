@@ -17,10 +17,10 @@ alert(`Great, ${userPrompt} is my favorite color too!`)
 
 
 
-let hercules = parseInt(prompt(`how many days are you going to be renting Hercules?`));
-let bear = parseInt(prompt(`how many days are you going to be renting Brother Bear?`));
-let mermaid = parseInt(prompt(`how many days are you going to be renting The Little Mermaid?`));
-let costPerDay = parseInt(prompt(`What is the cost per day to rent these movies?`));
+let hercules = parseFloat(prompt(`how many days are you going to be renting Hercules?`));
+let bear = parseFloat(prompt(`how many days are you going to be renting Brother Bear?`));
+let mermaid = parseFloat(prompt(`how many days are you going to be renting The Little Mermaid?`));
+let costPerDay = parseFloat(prompt(`What is the cost per day to rent these movies?`));
 let daysRented = hercules + bear + mermaid;
 let totalCost = daysRented * costPerDay;
 let customerCost = totalCost.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})
@@ -34,10 +34,10 @@ alert(`Your total cost for renting these movies is: ${customerCost}`)
 //     You worked 10 hours for Facebook, 6 hours for Google and 4 hours for Amazon.
 
 
-let googlePay = parseInt(prompt(`How much do you earn per hour from Google?`));
-let amazonPay = parseInt(prompt(`How much do you earn per hour from Amazon?`));
-let facebookPay = parseInt(prompt(`How much do you earn per hour from Facebook?`));
-let googleHours = parseInt(prompt(`How many hours did you work for Google this week?`)), amazonHours = parseInt(prompt(`How many hours did you work for Amazon this week?`)), facebookHours = parseInt(prompt(`How many hours did you work for Facebook this week?`));
+let googlePay = parseFloat(prompt(`How much do you earn per hour from Google?`));
+let amazonPay = parseFloat(prompt(`How much do you earn per hour from Amazon?`));
+let facebookPay = parseFloat(prompt(`How much do you earn per hour from Facebook?`));
+let googleHours = parseFloat(prompt(`How many hours did you work for Google this week?`)), amazonHours = parseFloat(prompt(`How many hours did you work for Amazon this week?`)), facebookHours = parseFloat(prompt(`How many hours did you work for Facebook this week?`));
 let totalPay = (googlePay * googleHours) + (amazonPay * amazonHours) + (facebookPay * facebookHours);
 let formattedPaycheck = totalPay.toLocaleString(`en-US`, {style:`currency`, currency:`USD`});
 
@@ -49,8 +49,8 @@ alert(`You earned ${formattedPaycheck} this week from working at these companies
 // the class schedule does not conflict with her current schedule.
 
 let scheduleConflicts = confirm(`Does this class conflict with your schedule? If the class does conflict with your schedule click 'Cancel', if the class does not conflict with your schedule click 'Ok'`);
-let maxClassSize = parseInt(prompt(`What is the max class size for this class?`)); // 30
-let currentClassSize = parseInt(prompt(`What is the current class size for this class?`)); // 24
+let maxClassSize = parseFloat(prompt(`What is the max class size for this class?`)); // 30
+let currentClassSize = parseFloat(prompt(`What is the current class size for this class?`)); // 24
 
 let canEnroll = scheduleConflicts && maxClassSize > currentClassSize;
 if (canEnroll){
@@ -67,7 +67,7 @@ if (canEnroll){
 //     Premium members do not need to buy a specific amount of products.
 
 let minCartsize = 2;
-let cartSize = parseInt(prompt(`How many items are in your cart?`))// 3
+let cartSize = parseFloat(prompt(`How many items are in your cart?`))// 3
 let premiumMember = confirm(`Do you hold a premium membership? If yes click 'Ok' if no click 'Cancel'`);
 let offerValid = confirm(`Is the current discount offer expired? If currently not expired click 'Ok', If current offer is expired click 'Cancel'`);
 

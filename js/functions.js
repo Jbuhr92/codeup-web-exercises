@@ -9,7 +9,7 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 const sayHello = (name) =>{
-    let welcome = `Hello ${name}`
+    let welcome = `Hello ${name}!`
     return welcome
 }
 /**
@@ -34,7 +34,7 @@ console.log(sayHello(myName))
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+let random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -54,13 +54,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-const isTwo = (Number) => {
-    let result = Number === 2;
+const isTwo = (number) => {
+    let result = number === 2;
     return result;
 }
+let randomMessage = isTwo(random)
+console.log(randomMessage)
 
-console.log(isTwo(3))
-console.log(isTwo(2))
 
 /**
  * TODO:
@@ -78,8 +78,8 @@ const calculatedTip = (num1, num2) => {
     let result = calculate.toFixed(2)
     return result;
 }
-let calculateTip = calculatedTip(.20, 8473.39);
-console.log(calculateTip)
+let afterCalculateTip = calculatedTip(.20, 8473.39);
+console.log(afterCalculateTip)
 
 
 /**
