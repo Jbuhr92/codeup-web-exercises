@@ -148,32 +148,31 @@
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-// let luckyNumber = Math.floor(Math.random() * 6);
-// let totalAmount = 100;
-// const calculateTotal = (luckyNumber, totalAmount) => {
-//     if (luckyNumber === 0){
-//         let calculate = totalAmount
-//         return `Sorry you did not win a discount this time! Your total is still ${formatToLocaleString(calculate)}`
-//     } else if (luckyNumber === 1){
-//         let calculate = totalAmount - (totalAmount * .1)
-//         return `You won a discount! your total discount amount is 10% Your new total is ${formatToLocaleString(calculate)}`
-//     } else if (luckyNumber === 2){
-//         let calculate = totalAmount - (totalAmount * .25)
-//         return `You won a discount! your total discount amount is 25% Your new total is ${formatToLocaleString(calculate)}`
-//     } else if (luckyNumber === 3){
-//         let calculate = totalAmount - (totalAmount * .35)
-//         return `You won a discount! your total discount amount is 35% Your new total is ${formatToLocaleString(calculate)}`
-//     } else if (luckyNumber === 4){
-//         let calculate = totalAmount - (totalAmount * .5)
-//         return `You won a discount! your total discount amount is 50% Your new total is ${formatToLocaleString(calculate)}`
-//     } else if (luckyNumber === 5){
-//         let calculate = totalAmount * 0
-//         return `You won a discount! your total discount amount is 100% Your new total is ${formatToLocaleString(calculate)}`
-//     }
+let luckyNumber = Math.floor(Math.random() * 6);
+let totalAmount = 100;
+const calculateTotal = (luckyNumber, totalAmount) => {
+    if (luckyNumber === 0){
+        return `Sorry you did not win a discount this time! Your total is still ${formatToLocaleString(totalAmount)}`
+    } else if (luckyNumber === 1){
+        let calculate = totalAmount - (totalAmount * .1)
+        return `You won a discount! your total discount amount is 10% Your new total is ${formatToLocaleString(calculate)}`
+    } else if (luckyNumber === 2){
+        let calculate = totalAmount - (totalAmount * .25)
+        return `You won a discount! your total discount amount is 25% Your new total is ${formatToLocaleString(calculate)}`
+    } else if (luckyNumber === 3){
+        let calculate = totalAmount - (totalAmount * .35)
+        return `You won a discount! your total discount amount is 35% Your new total is ${formatToLocaleString(calculate)}`
+    } else if (luckyNumber === 4){
+        let calculate = totalAmount - (totalAmount * .5)
+        return `You won a discount! your total discount amount is 50% Your new total is ${formatToLocaleString(calculate)}`
+    } else if (luckyNumber === 5){
+        let calculate = 0
+        return `You won a discount! your total discount amount is 100% Your new total is ${formatToLocaleString(calculate)}`
+    }
 
-// }
-//
-// console.log(calculateTotal(luckyNumber, totalAmount))
+}
+
+console.log(calculateTotal(luckyNumber, totalAmount))
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -206,41 +205,41 @@
  * HINT: The way we prompt for a value could be improved
  */
 
-let userInput = confirm(`Would you like to enter a number?`)
-const calculateUser = (userInput) => {
-    if (userInput === false) {
-        let userOutput = `Have a wonderful day!`
-        return userOutput;
-    } else {
-        let userNumber = parseFloat(prompt(`Please enter a number`));
-        if (typeof userNumber === "string" || isNaN(userNumber) !== false) {
-               return `That is not a number!`
-        } else {
-            let userNumberAdd = `${userNumber} + 100 = ${userNumber + 100}`
-            let posOrNeg = userNumber >= 0
-            let evenOrOdd = userNumber % 2
-            const userPosOrNeg = (posOrNeg) => {
-                if (posOrNeg !== true) {
-                    let userNumberNeg = `${userNumber} is negative!`
-                    return userNumberNeg
-                } else {
-                    let userNumberPos = `${userNumber} is positive!`
-                    return userNumberPos
-                }
-            }
-                    const numberOddOrEven = (evenOrOdd) =>{
-                    if (evenOrOdd !== 0) {
-                let userNumberOdd = `The number you entered is odd!`
-                        return userNumberOdd
-                    } else {
-
-                let userNumberEven = `The number you entered is even`
-                        return userNumberEven
-            }
-                    }
-         let message = `The number you entered is ${userNumber}, ${userNumberAdd}, ${userPosOrNeg(posOrNeg)} ${numberOddOrEven(evenOrOdd)}`;
-         return message
-        }
-    }
-}
-         alert(calculateUser(userInput))
+// let userInput = confirm(`Would you like to enter a number?`)
+// const calculateUser = (userInput) => {
+//     if (userInput === false) {
+//         let userOutput = `Have a wonderful day!`
+//         return userOutput;
+//     } else {
+//         let userNumber = parseFloat(prompt(`Please enter a number`));
+//         if (typeof userNumber === "string" || isNaN(userNumber) !== false) {
+//                return `That is not a number!`
+//         } else {
+//             let userNumberAdd = `${userNumber} + 100 = ${userNumber + 100}`
+//             let posOrNeg = userNumber >= 0
+//             let evenOrOdd = userNumber % 2
+//             const userPosOrNeg = (posOrNeg) => {
+//                 if (posOrNeg !== true) {
+//                     let userNumberNeg = `${userNumber} is negative!`
+//                     return userNumberNeg
+//                 } else {
+//                     let userNumberPos = `${userNumber} is positive!`
+//                     return userNumberPos
+//                 }
+//             }
+//                     const numberOddOrEven = (evenOrOdd) =>{
+//                     if (evenOrOdd !== 0) {
+//                 let userNumberOdd = `The number you entered is odd!`
+//                         return userNumberOdd
+//                     } else {
+//
+//                 let userNumberEven = `The number you entered is even`
+//                         return userNumberEven
+//             }
+//                     }
+//          let message = `The number you entered is ${userNumber}, ${userNumberAdd}, ${userPosOrNeg(posOrNeg)} ${numberOddOrEven(evenOrOdd)}`;
+//          return message
+//         }
+//     }
+// }
+//          alert(calculateUser(userInput))

@@ -3,4 +3,6 @@ function formatToLocaleString(number, language="en", country="US", currency='USD
         {style: 'currency', currency: currency}
     );
 }
-// console.log(formatToLocaleString(475))
+function isNumericAndNotNaN(input){
+    return !isNaN(parseFloat(input)) && input !== null && typeof input !== "boolean" && typeof input !== "string";
+}
