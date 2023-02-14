@@ -27,8 +27,8 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-let randomColor = colors[Math.floor(Math.random() * colors.length)];
+// let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// let randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 // const analyzeColor = randomColor => {
 //     if (randomColor === "red"){
@@ -153,26 +153,26 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
 // const calculateTotal = (luckyNumber, totalAmount) => {
 //     if (luckyNumber === 0){
 //         let calculate = totalAmount
-//         return `Sorry you did not win a discount this time! Your total is still ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `Sorry you did not win a discount this time! Your total is still ${formatToLocaleString(calculate)}`
 //     } else if (luckyNumber === 1){
 //         let calculate = totalAmount - (totalAmount * .1)
-//         return `You won a discount! your total discount amount is 10% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `You won a discount! your total discount amount is 10% Your new total is ${formatToLocaleString(calculate)}`
 //     } else if (luckyNumber === 2){
 //         let calculate = totalAmount - (totalAmount * .25)
-//         return `You won a discount! your total discount amount is 25% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `You won a discount! your total discount amount is 25% Your new total is ${formatToLocaleString(calculate)}`
 //     } else if (luckyNumber === 3){
 //         let calculate = totalAmount - (totalAmount * .35)
-//         return `You won a discount! your total discount amount is 35% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `You won a discount! your total discount amount is 35% Your new total is ${formatToLocaleString(calculate)}`
 //     } else if (luckyNumber === 4){
 //         let calculate = totalAmount - (totalAmount * .5)
-//         return `You won a discount! your total discount amount is 50% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `You won a discount! your total discount amount is 50% Your new total is ${formatToLocaleString(calculate)}`
 //     } else if (luckyNumber === 5){
 //         let calculate = totalAmount * 0
-//         return `You won a discount! your total discount amount is 100% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//         return `You won a discount! your total discount amount is 100% Your new total is ${formatToLocaleString(calculate)}`
 //     }
-//
-// }
 
+// }
+//
 // console.log(calculateTotal(luckyNumber, totalAmount))
 /**
  * TODO:
@@ -185,28 +185,6 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
 // Generate a random number between 0 and 6
 // let luckyNumber = Math.floor(Math.random() * 6);
 // let totalAmount = parseFloat(prompt(`What is the amount of your bill?`))
-// const calculateTotal = (luckyNumber, totalAmount) => {
-//     if (luckyNumber === 0){
-//         let calculate = totalAmount
-//         return `Sorry you did not win a discount this time! Your total is still ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     } else if (luckyNumber === 1){
-//         let calculate = totalAmount - (totalAmount * .1)
-//         return `You won a discount! your total discount amount is 10% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     } else if (luckyNumber === 2){
-//         let calculate = totalAmount - (totalAmount * .25)
-//         return `You won a discount! your total discount amount is 25% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     } else if (luckyNumber === 3){
-//         let calculate = totalAmount - (totalAmount * .35)
-//         return `You won a discount! your total discount amount is 35% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     } else if (luckyNumber === 4){
-//         let calculate = totalAmount - (totalAmount * .5)
-//         return `You won a discount! your total discount amount is 50% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     } else if (luckyNumber === 5){
-//         let calculate = totalAmount * 0
-//         return `You won a discount! your total discount amount is 100% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
-//     }
-//
-// }
 // alert(calculateTotal(luckyNumber, totalAmount))
 
 /**
@@ -231,33 +209,38 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
 let userInput = confirm(`Would you like to enter a number?`)
 const calculateUser = (userInput) => {
     if (userInput === false) {
-        let userOutput = alert(`Have a wonderful day!`)
+        let userOutput = `Have a wonderful day!`
         return userOutput;
     } else {
         let userNumber = parseFloat(prompt(`Please enter a number`));
         if (typeof userNumber === "string" || isNaN(userNumber) !== false) {
-                alert(`That is not a number!`)
+               return `That is not a number!`
         } else {
-            let userNumberAdd = userNumber + 100
-            alert(`${userNumber} + 100 = ${userNumberAdd}`)
+            let userNumberAdd = `${userNumber} + 100 = ${userNumber + 100}`
             let posOrNeg = userNumber >= 0
             let evenOrOdd = userNumber % 2
-            if (posOrNeg !== true) {
-                alert(`${userNumber} is negative!`)
-            } else {
-                alert(`${userNumber} is positive!`)
+            const userPosOrNeg = (posOrNeg) => {
+                if (posOrNeg !== true) {
+                    let userNumberNeg = `${userNumber} is negative!`
+                    return userNumberNeg
+                } else {
+                    let userNumberPos = `${userNumber} is positive!`
+                    return userNumberPos
+                }
             }
-            if (evenOrOdd !== 0) {
-                alert(`The number you entered is odd!`)
-            } else {
+                    const numberOddOrEven = (evenOrOdd) =>{
+                    if (evenOrOdd !== 0) {
+                let userNumberOdd = `The number you entered is odd!`
+                        return userNumberOdd
+                    } else {
 
-                alert(`The number you entered is not odd!`)
+                let userNumberEven = `The number you entered is even`
+                        return userNumberEven
             }
+                    }
+         let message = `The number you entered is ${userNumber}, ${userNumberAdd}, ${userPosOrNeg(posOrNeg)} ${numberOddOrEven(evenOrOdd)}`;
+         return message
         }
     }
 }
-          calculateUser(userInput)
-// console.log(calculateUser(userInput))
-
-// console.log(isNaN("string"))
-// console.log(isNaN(3))
+         alert(calculateUser(userInput))
