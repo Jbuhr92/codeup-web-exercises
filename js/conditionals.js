@@ -27,18 +27,71 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+// const analyzeColor = randomColor => {
+//     if (randomColor === "red"){
+//         return "Red is the color of apples!";
+//     } else if (randomColor === "orange") {
+//         return "Orange is the color of pumpkins!";
+//     } else if (randomColor === "yellow") {
+//         return "Yellow is the color of lemons";
+//     } else if (randomColor === "green"){
+//         return "Green is the color of the grass!";
+//     }    else if (randomColor === "blue"){
+//         return "Blue is the color of the sky!";
+//     } else if (randomColor === "indigo"){
+//         return `Indigo is the color of blueberries!!`;
+//     } else if (randomColor === "violet"){
+//         return `Violet is the color of grapes!`
+//     } else {
+//         return `I know nothing about that color!`
+//     }
+
+
+
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
+// console.log(analyzeColor(randomColor))
+
+
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+// switch(randomColor.toLowerCase()) {
+//     case "red":
+//          alert("Red is the color of apples!");
+//         break;
+//     case "orange":
+//         alert("Orange is the color of pumpkins!");
+//         break;
+//     case "yellow":
+//         alert("Yellow is the color of lemons");
+//         break;
+//     case "green":
+//         alert("Green is the color of the grass!");
+//         break;
+//     case "blue":
+//         alert("Blue is the color of the sky!");
+//         break;
+//     case "indigo":
+//         alert(`Indigo is the color of blueberries!!`);
+//         break;
+//         case "violet":
+//             alert(`Violet is the color of grapes!`);
+//         break;
+//     default:
+//         alert("I don't know anything about that color :(");
+// }
 
 /**
  * TODO:
@@ -46,6 +99,33 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+// const analyzeColor = prompt(`What is your favorite color?`)
+// switch(analyzeColor.toLowerCase()) {
+//     case "red":
+//         alert("Red is the color of apples!");
+//         break;
+//     case "orange":
+//         alert("Orange is the color of pumpkins!");
+//         break;
+//     case "yellow":
+//         alert("Yellow is the color of lemons");
+//         break;
+//     case "green":
+//         alert("Green is the color of the grass!");
+//         break;
+//     case "blue":
+//         alert("Blue is the color of the sky!");
+//         break;
+//     case "indigo":
+//         alert(`Indigo is the color of blueberries!!`);
+//         break;
+//     case "violet":
+//         alert(`Violet is the color of grapes!`);
+//         break;
+//     default:
+//         alert("I don't know anything about that color :(");
+// }
 
 /* ########################################################################## */
 
@@ -68,7 +148,32 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+// let luckyNumber = Math.floor(Math.random() * 6);
+// let totalAmount = 100;
+// const calculateTotal = (luckyNumber, totalAmount) => {
+//     if (luckyNumber === 0){
+//         let calculate = totalAmount
+//         return `Sorry you did not win a discount this time! Your total is still ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 1){
+//         let calculate = totalAmount - (totalAmount * .1)
+//         return `You won a discount! your total discount amount is 10% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 2){
+//         let calculate = totalAmount - (totalAmount * .25)
+//         return `You won a discount! your total discount amount is 25% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 3){
+//         let calculate = totalAmount - (totalAmount * .35)
+//         return `You won a discount! your total discount amount is 35% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 4){
+//         let calculate = totalAmount - (totalAmount * .5)
+//         return `You won a discount! your total discount amount is 50% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 5){
+//         let calculate = totalAmount * 0
+//         return `You won a discount! your total discount amount is 100% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     }
+//
+// }
 
+// console.log(calculateTotal(luckyNumber, totalAmount))
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -78,7 +183,31 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+// let luckyNumber = Math.floor(Math.random() * 6);
+// let totalAmount = parseFloat(prompt(`What is the amount of your bill?`))
+// const calculateTotal = (luckyNumber, totalAmount) => {
+//     if (luckyNumber === 0){
+//         let calculate = totalAmount
+//         return `Sorry you did not win a discount this time! Your total is still ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 1){
+//         let calculate = totalAmount - (totalAmount * .1)
+//         return `You won a discount! your total discount amount is 10% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 2){
+//         let calculate = totalAmount - (totalAmount * .25)
+//         return `You won a discount! your total discount amount is 25% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 3){
+//         let calculate = totalAmount - (totalAmount * .35)
+//         return `You won a discount! your total discount amount is 35% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 4){
+//         let calculate = totalAmount - (totalAmount * .5)
+//         return `You won a discount! your total discount amount is 50% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     } else if (luckyNumber === 5){
+//         let calculate = totalAmount * 0
+//         return `You won a discount! your total discount amount is 100% Your new total is ${calculate.toLocaleString(`en-US`, {style:`currency`, currency:`USD`})}`
+//     }
+//
+// }
+// alert(calculateTotal(luckyNumber, totalAmount))
 
 /**
  * TODO:
@@ -98,3 +227,37 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+let userInput = confirm(`Would you like to enter a number?`)
+const calculateUser = (userInput) => {
+    if (userInput === false) {
+        let userOutput = alert(`Have a wonderful day!`)
+        return userOutput;
+    } else {
+        let userNumber = parseFloat(prompt(`Please enter a number`));
+        if (typeof userNumber === "string" || isNaN(userNumber) !== false) {
+                alert(`That is not a number!`)
+        } else {
+            let userNumberAdd = userNumber + 100
+            alert(`${userNumber} + 100 = ${userNumberAdd}`)
+            let posOrNeg = userNumber >= 0
+            let evenOrOdd = userNumber % 2
+            if (posOrNeg !== true) {
+                alert(`${userNumber} is negative!`)
+            } else {
+                alert(`${userNumber} is positive!`)
+            }
+            if (evenOrOdd !== 0) {
+                alert(`The number you entered is odd!`)
+            } else {
+
+                alert(`The number you entered is not odd!`)
+            }
+        }
+    }
+}
+          calculateUser(userInput)
+// console.log(calculateUser(userInput))
+
+// console.log(isNaN("string"))
+// console.log(isNaN(3))
