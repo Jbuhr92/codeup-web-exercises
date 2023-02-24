@@ -1,3 +1,17 @@
+"use strict";
+
+function arrayOfRandomNumbers(lengthOfArray){
+    const array = [];
+    for (let i = 0; i <lengthOfArray; i++){
+        let randomInput = randomNumber(1, lengthOfArray + 100);
+        while(array.includes(randomInput)){
+            randomInput = randomNumber(1, lengthOfArray + 100);
+        }
+        array.push(randomNumber)
+    }
+    return array;
+}
+
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -86,3 +100,17 @@ const isLessThan = (lessInput1, lessInput2) => {
 const isGreaterThan = (greaterInput1, greaterInput2) => {
     return greaterInput1 > greaterInput2
 }
+
+
+// function extractKey(array, key){
+//     const values = [];
+//     for(let i = 0; i < array.length; i++){
+//         values.push(array[i][key]);
+//     }
+//     return values;
+// }
+
+// const shoppersName = extractKey(shoppers, "name")
+// const shoppersAmount = extractKey(shoppers, "amount")
+// // console.log(shoppersName)
+// console.log(shoppersAmount)
