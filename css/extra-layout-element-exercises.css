@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+header.container {
+    height: 80px;
+}
+.nav {
+    color: grey;
+}
+
+.button {
+    min-width: 100px;
+    padding: 5px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero-scene {
+    background-color: lightgray;
+    min-height: 750px;
+
+}
+.hero-text {
+    font-size: 50px;
+    color: #535353;
+    line-height: .85;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.img-corners {
+    border-radius: 8px;
+}
+.hero-img-spacing {
+    padding: 30px;
+}
+.hero-img {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);;
+    border-radius: 8px;
+}
+.sidekick-text {
+    font-size: 10px;
+    color: gray;
+}
+.grey-text {
+    color: gray;
+}
+
+.features {
+    padding: 30px;
+    margin-bottom: 35px;
+}
+.feature-text {
+    color: gray;
+    max-width: 430px;
+}
+
+.feature-title-img {
+    min-width: 75px;
+    min-height: 75px;
+    flex: 0 1 0;
+    gap: 190px;
+}
+
+.feature-title-text {
+    color: gray;
+    max-width: 1070px;
+    margin-bottom: 50px;
+}
+
+svg {
+    fliter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.page-wrapper {
+    display:flex;
+    width:100%;
+    max-width:800px;
+    column-gap: 5px;
+    margin-bottom: 5px;
+    perspective: 91px;
+    perspective-origin: center;
+    margin: 30px 0px;
+}
+.photos-wrapper .photo-wrapper {
+    flex:1 0;
+    min-width:1px;
+    aspect-ratio: 4/3;
+    border: 5px solid #fff;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    transform-style: preserve-3d;
+    transition: all ease .3s;
+}
