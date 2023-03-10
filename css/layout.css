@@ -70,6 +70,9 @@ align-items: end;
 .row.no-gap {
     gap: unset;
 }
+.row.grow {
+    flex: 1 0 0;
+}
 
     /*
         The "column" is a container element that vertically separates its
@@ -85,7 +88,7 @@ align-items: end;
 }
 /* Combo classes to extend the column's versatility */
 .column.shrink {
-    flex: 0 1 0
+    flex: 0 1 auto;
 }
 .column.text-center {
     text-align: center;
