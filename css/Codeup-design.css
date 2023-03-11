@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+.page-wrapper {
+    background-color: #f0f0f0;
+}
+.hero-scene {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-content: center;
+}
+h1 {
+    font-family: "Anton";
+    font-weight: 200;
+    font-size: 41px;
+    text-align: center;
+}
+.hero-paragraph {
+    font-family: "Anton";
+    text-align: center;
+    font-size: 25px;
+}
+.hidden-on-desktop {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .hidden-on-desktop {
+        display: flex;
+    }
+    .container.hidden-on-desktop {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .header #myLinks {
+        display: none;
+    }
+    .row.topnav {
+        display: unset;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #f0f0f0;
+        position: relative;
+    }
+    .topnav a {
+        flex-direction: row-reverse;
+        background-color: #f0f0f0;
+        color: #a5a5a5;
+        padding: 11px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Abel, sans-serif;
+        display: block;
+        border: 1px solid #d8d8d8 ;
+    }
+    .navigation-links {
+        display: none;
+
+    }
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav a:hover {
+        background-color: #f0f0f0;
+        color: #6C6C6C;
+    }
+    .header-logo {
+        display: block;
+        max-height: 50px;
+        max-width: 50px;
+    }
+}

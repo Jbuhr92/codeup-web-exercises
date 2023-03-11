@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeup Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/resets.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/Codeup-design.css">
+</head>
+<body>
+<div class="page-wrapper">
+  <header class="container hidden-on-desktop">
+    <div class="row topnav">
+        <img class="header-logo" src="images/assets/logo.png" alt="company logo" />
+        <div class="navigation-links" id="myLinks">
+          <a href="#Services">Services</a>
+          <a href="#Work">Work</a>
+          <a href="#Blog">Blog</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+  </header>
+          <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <div class="container">
+      <div class="hero-scene">
+          <div class="column">
+              <h1>VISUAL DESIGN & WEB DEVELOPMENT</h1>
+          </div>
+          <div class="column hero-paragraph">
+              <p>FROM PARK CITY, UTAH</p>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
