@@ -237,6 +237,16 @@ h1 {
     }
 
 }
+@media screen and (min-width: 768px) {
+
+    .bottom-border {
+        display: flex;
+        max-width: 90vw ;
+        border-bottom: 2px solid #BCBDBE;
+        margin-bottom: 40px;
+    }
+
+}
 @media screen and (min-width: 1001px) {
     .hidden-on-mobile {
         display: flex;
@@ -255,7 +265,43 @@ h1 {
         color: #00AAA9;
     }
     .bottom-border {
-        border-bottom: 2px solid black;
+        max-width: 90vw ;
+        border-bottom: 2px solid #BCBDBE;
         margin-bottom: 40px;
+    }
+    .project-text-desktop {
+        margin-bottom: 100px;
+    }
+    .desktop-sidebar {
+        gap: 35px;
+    }
+    .side-text-margin{
+        margin-bottom: 30px;
+    }
+    .square-image {
+        width: 70px;
+        height: 70px;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+    .project-images-column {
+        flex: 2 0 0
+    }
+    .side-text {
+        font-family: Anton;
+        font-size: 21px;
+        font-weight: bolder;
+        text-align: left;
+        max-width: 132px;
+    }
+    .tweet-header {
+        font-family: Abel;
+        font-weight: bold;
+    }
+    .tweet-body {
+        max-width: 250px;
+        text-align: left;
+        font-family: Abel;
+        font-size: 18px;
     }
 }

@@ -51,16 +51,6 @@
         </a>
     </div>
   </header>
-          <script>
-    function myFunction() {
-      let x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
   <div class="container">
       <div class="hero-scene">
           <div class="row">
@@ -101,62 +91,64 @@
       </div>
   </div>
   <div class="container project-container">
-    <div class="row project-text">
-          <div class="column">
-              <h2>SELECTED WORK</h2>
-          </div>
-      </div>
-    <div class="row project-images">
-        <div class="column shrink">
-            <div class="mobile-img">
-                <img class="image-border" src="images/assets/project-images/apple-ipad.jpg">
-            </div>
-            <div class="row feature-spacing">
-                <div class="column feature-text">
-                    <p>Feature Project</p>
-                </div>
-                <div class="column circle-direction">
-                    <div class="small-circles-red">
-                        <p>D</p>
+      <div class="row ">
+          <div class="column project-images-column">
+              <div class="row project-text">
+                  <div class="column project-text-desktop">
+                      <h2>SELECTED WORK</h2>
+                  </div>
+              </div>
+              <div class="row project-images">
+                <div class="column shrink">
+                    <div class="mobile-img">
+                        <img class="image-border" src="images/assets/project-images/apple-ipad.jpg">
                     </div>
-                    <div class="small-circles-orange">
-                        <p>D</p>
-                    </div>
-                    <div class="small-circles-green">
-                        <p>S</p>
-                    </div>
-                    <div class="small-circles-grey">
-                        <p>H</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="column shrink mobile-img">
-            <div class="mobile-img">
-                <img class="image-border" src="images/assets/project-images/macbook.jpg">
-            </div>
-            <div class="row feature-spacing">
-                <div class="column feature-text">
-                    <p>Feature Project</p>
-                </div>
-                <div class="column circle-direction">
-                    <div class="small-circles-red">
-                        <p>D</p>
-                    </div>
-                    <div class="small-circles-orange">
-                        <p>D</p>
-                    </div>
-                    <div class="small-circles-green">
-                        <p>S</p>
-                    </div>
-                    <div class="small-circles-grey">
-                        <p>H</p>
+                    <div class="row feature-spacing">
+                        <div class="column feature-text">
+                            <p>Feature Project</p>
+                        </div>
+                        <div class="column circle-direction">
+                            <div class="small-circles-red">
+                                <p>D</p>
+                            </div>
+                            <div class="small-circles-orange">
+                                <p>D</p>
+                            </div>
+                            <div class="small-circles-green">
+                                <p>S</p>
+                            </div>
+                            <div class="small-circles-grey">
+                                <p>H</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="column shrink mobile-img">
+                    <div class="mobile-img">
+                        <img class="image-border" src="images/assets/project-images/macbook.jpg">
+                    </div>
+                    <div class="row feature-spacing">
+                        <div class="column feature-text">
+                            <p>Feature Project</p>
+                        </div>
+                        <div class="column circle-direction">
+                            <div class="small-circles-red">
+                                <p>D</p>
+                            </div>
+                            <div class="small-circles-orange">
+                                <p>D</p>
+                            </div>
+                            <div class="small-circles-green">
+                                <p>S</p>
+                            </div>
+                            <div class="small-circles-grey">
+                                <p>H</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="row project-images">
+              <div class="row project-images">
         <div class="column shrink">
             <div class="mobile-img">
                 <img class="image-border" src="images/assets/project-images/man.jpg">
@@ -206,7 +198,62 @@
             </div>
         </div>
     </div>
+        </div>
+        <div class="column side-image-column hidden-on-mobile">
+            <div class="row project-text">
+                <div class="column side-text-margin">
+                    <h2>THE LAST</h2>
+                </div>
+            </div>
+            <div class="column desktop-sidebar">
+                <div class="row">
+                    <div class="column shrink side-image">
+                        <img class="square-image" src="images/assets/project-images/mobile-phone.jpg">
+                    </div>
+                    <div class="column grow side-text">
+                        <p>THE ADMIN BAR AND ABSOLUTE POSITIONING</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column shrink side-image">
+                        <img class="square-image" src="images/assets/project-images/head.jpg">
+                    </div>
+                    <div class="column grow side-text">
+                        <p>NIBBLE AWESOME WEBSITE TESTING</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column shrink side-image">
+                        <img class="square-image" src="images/assets/project-images/ipad.jpg">
+                    </div>
+                    <div class="column grow side-text">
+                        <p>HOW TO GET GOOGLE TO LIKE YOU</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="column tweet-header">
+                            <p>LAST TWEET</p>
+                        </div>
+                        <div class="column tweet-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid consequuntur delectus dolorem doloremque exercitationem hic in iste labore maiores minus perspiciatis, provident quam quidem sequi soluta sunt totam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </div>
 </body>
 </html>
