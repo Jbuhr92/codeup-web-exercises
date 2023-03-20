@@ -1,0 +1,8 @@
+.hidden {
+    display: none
+}
+
+#secretMessage {
+    font-size: 24px;
+    color: green;
+}
