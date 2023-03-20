@@ -10,6 +10,14 @@ $(document).ready(function() {
     });
 });
 
-// $('dt').on('click', function (){
-//     $(this).next().fadeToggle();
-// })
+$('button').click(function (){
+$(this).parents('.column').find('ul li:last-child').toggleClass('blueFont')
+})
+
+$('h3').click(function (){
+    $(this).next().toggleClass('boldFont')
+})
+
+$('li').click(function (){
+    $(this).parents('ul').find('li:first-child').toggleClass('highlight')
+})

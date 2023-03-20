@@ -8,3 +8,11 @@ dt {
 .highlight {
     background-color: yellow;
 }
+
+.blueFont {
+    color: blue;
+}
+
+.boldFont {
+    font-weight: bold;
+}
