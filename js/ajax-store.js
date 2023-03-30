@@ -12,3 +12,18 @@ fetch(`data/inventory.json`).then(response => response.json()).then(data => {
         gridContainer.appendChild(card);
     })
 })
+const refreshButton =document.getElementById('#reload');
+const url = `data/inventory.json`;
+
+function fetchData() {
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            // do something with the data, like update your UI
+        })
+        .catch(error => console.error(error));
+}
+
+refreshButton.addEventListener('click', () => {
+    fetchData();
+});
