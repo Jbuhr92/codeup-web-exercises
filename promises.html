@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Promise Example</title>
+  <script type="module" src="js/keys.js"></script>
+  <script type="module" src="js/promises.js"></script>
+</head>
+<body>
+<h1>Promise Example</h1>
+<label for="username-input">Enter GitHub username:</label>
+<input id="username-input" type="text" placeholder="Enter username...">
+<button onclick="getLastCommitDate(document.getElementById('username-input').value).then(date => alert(`Last commit date: ${date}`)).catch(error => alert(error.message))">Get Last Commit Date</button>
+</body>
+</html>
